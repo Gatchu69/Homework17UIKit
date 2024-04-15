@@ -121,40 +121,44 @@ class ThirdVC: UIViewController {
     
     func addIcon1(){
         view.addSubview(icon1)
-        icon1.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         icon1.setImage(UIImage(named: "Frame 62"), for: .normal)
         icon1.translatesAutoresizingMaskIntoConstraints = false
         icon1.topAnchor.constraint(equalTo: view.topAnchor, constant: 313).isActive = true
         icon1.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 62).isActive = true
+        icon1.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        icon1.heightAnchor.constraint(equalToConstant: 40).isActive = true
         }
     
     func addIcon2(){
         view.addSubview(icon2)
-        icon2.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         icon2.setImage(UIImage(named: "Frame 63"), for: .normal)
         icon2.translatesAutoresizingMaskIntoConstraints = false
         icon2.topAnchor.constraint(equalTo: view.topAnchor, constant: 313).isActive = true
         icon2.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 129).isActive = true
+        icon2.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        icon2.heightAnchor.constraint(equalToConstant: 40).isActive = true
         }
     
     func addIcon3(){
         view.addSubview(icon3)
-        icon3.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         icon3.setImage(UIImage(named: "Frame 64"), for: .normal)
         icon3.translatesAutoresizingMaskIntoConstraints = false
         icon3.topAnchor.constraint(equalTo: view.topAnchor, constant: 313).isActive = true
         icon3.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 196).isActive = true
+        icon3.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        icon3.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
     }
     
     func addIcon4(){
         view.addSubview(icon4)
-        icon4.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         icon4.setImage(UIImage(named: "Frame 65"), for: .normal)
         icon4.translatesAutoresizingMaskIntoConstraints = false
         icon4.topAnchor.constraint(equalTo: view.topAnchor, constant: 313).isActive = true
         icon4.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 263).isActive = true
-        }
+        icon4.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        icon4.heightAnchor.constraint(equalToConstant: 40).isActive = true
+    }
     
     @objc func addToSecondVC(){
         self.dismiss(animated: true)
